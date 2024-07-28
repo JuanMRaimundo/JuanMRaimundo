@@ -1,0 +1,163 @@
+<div class="hero">
+  <h1>{{ "WELCOME" | translate }}</h1>
+  <p>{{ "EXPLORE" | translate }}</p>
+  <a class="btn btn-secondary" href="#proyectos">{{ "START" | translate }}</a>
+</div>
+<div class="container mt-5">
+  <!-- Proyectos Section -->
+  <section id="proyectos">
+    <h2 class="text-center mb-4">{{ "PROJECTS" | translate }}</h2>
+    <!-- Proyecto Angular e-learning -->
+    <div
+      class="row mb-5 proyect-item"
+      [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+      (intersectionObserver)="onIntersection($event)"
+    >
+      <div class="col-md-6">
+        <img
+          src="assets/images/AngularCursos2.png"
+          class="img-fluid project-image"
+          alt="Project 2"
+        />
+      </div>
+      <div class="col-md-6">
+        <h3>{{ "ANGULAR_PROJECT" | translate }}</h3>
+        <p>
+          {{ "ANGULAR_PROJECT_DESC" | translate }}
+        </p>
+        <a
+          href="https://github.com/JuanMRaimundo/NewTrainers-Angular"
+          target="_blank"
+          [ngClass]="buttonMode"
+          >{{ "WATCH" | translate }}</a
+        >
+      </div>
+    </div>
+    <!-- Proyecto JS-E-commerce -->
+    <div
+      class="row mb-5 proyect-item"
+      [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+      (intersectionObserver)="onIntersection($event)"
+    >
+      <div class="col-md-6">
+        <h3>{{ "JS_ECOMMERCE" | translate }}</h3>
+        <p>
+          {{ "JS_ECOMMERCE_DESC" | translate }}
+        </p>
+        <a
+          href="https://juanmraimundo.github.io/DulzurasBellaJS/"
+          target="_blank"
+          [ngClass]="buttonMode"
+          >{{ "WATCH" | translate }}</a
+        >
+      </div>
+      <div class="col-md-6">
+        <img
+          src="assets/images/JS-1.jpg"
+          class="img-fluid project-image"
+          alt="Project 3"
+        />
+      </div>
+    </div>
+    <!--  Proyecto React e-commerce -->
+    <div
+      class="row mb-5 proyect-item"
+      [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+      (intersectionObserver)="onIntersection($event)"
+    >
+      <div class="col-md-6">
+        <img
+          src="assets/images/SMS-react-1.png"
+          class="img-fluid project-image"
+          alt="Project 4"
+        />
+      </div>
+      <div class="col-md-6">
+        <h3>{{ "REACT_ECOMMERCE" | translate }}</h3>
+        <p>
+          {{ "REACT_ECOMMERCE_DESC" | translate }}
+        </p>
+        <a
+          href="https://github.com/JuanMRaimundo/SMSport-React"
+          target="_blank"
+          [ngClass]="buttonMode"
+          >{{ "WATCH" | translate }}</a
+        >
+      </div>
+    </div>
+    <!-- Primer proyecto- GoForGym -->
+    <div
+      class="row mb-5 proyect-item"
+      [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+      (intersectionObserver)="onIntersection($event)"
+    >
+      <div class="col-md-6">
+        <h3>{{ "FIRST_PROJECT" | translate }}</h3>
+        <p>
+          {{ "FIRST_PROJECT_DESC" | translate }}
+        </p>
+        <a
+          href="https://juanmraimundo.github.io/ProyectoGoForGym.github.io/"
+          target="_blank"
+          [ngClass]="buttonMode"
+          >{{ "WATCH" | translate }}</a
+        >
+      </div>
+      <div class="col-md-6">
+        <img
+          src="../../../assets/images/DW-goForGym.jpg"
+          class="img-fluid project-image"
+          alt="Project 4"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="otros">
+    <h2 class="text-center mb-4">
+      {{ "OTHER_SKILLS" | translate }}
+    </h2>
+    <div class="row">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6">
+            <h3>{{ "PERSONAL_SKILLS" | translate }}</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{ "AUTOLEARNING" | translate }}</li>
+              <li class="list-group-item">{{ "PROACTIVE" | translate }}</li>
+              <li class="list-group-item">{{ "ASSERTIVE" | translate }}</li>
+              <li class="list-group-item">{{ "COMMUNICATION" | translate }}</li>
+              <li class="list-group-item">
+                {{ "CRITICAL_THINKING" | translate }}
+              </li>
+              <li class="list-group-item">
+                {{ "DECISION_MAKING" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3>{{ "PROFESSIONAL_SKILLS" | translate }}</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                {{ "FRONTEND_DEVELOPMENT" | translate }}
+              </li>
+              <li class="list-group-item">
+                {{ "BACKEND_DEVELOPMENT" | translate }}
+              </li>
+              <li class="list-group-item">
+                {{ "NON_RELATIONAL_DB" | translate }}
+              </li>
+              <li class="list-group-item">{{ "DIGITAL_TOOLS" | translate }}</li>
+              <li class="list-group-item">
+                {{ "OFFICE_PACKAGE" | translate }}
+              </li>
+              <li class="list-group-item">
+                {{ "INTERMEDIATE_ENGLISH" | translate }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

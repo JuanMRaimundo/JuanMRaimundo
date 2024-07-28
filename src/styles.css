@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Arial", sans-serif;
+  background: #cecccc;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #181818;
+  color: #ddd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+#proyectos.dark-mode {
+  background-color: #181818;
+  color: #ddd;
+}
+
+.proyect-item.dark-mode {
+  background-color: #181818;
+  color: #ddd;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  /* color: #333; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #181818;
+  border-color: #555555;
+  color: #ffffff;
+}

@@ -1,0 +1,49 @@
+.navbar {
+  border: none;
+  font-size: 1rem;
+  transition: all 0.4s;
+  /*  padding: 0.5rem 1rem; */
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  /*  background-color: #ffffff; */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  padding: 1rem; /* Espaciado interno */
+}
+.navbar a {
+  color: #ffffff; /* Color del texto */
+  font-weight: bold; /* Peso del texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+/* .navbar .navbar-brand,
+.navbar .nav-link {
+  color: #333;
+  font-weight: 700;
+}
+ */
+.navbar a:hover {
+  /*  color: #0056b3; */
+  color: #007bff;
+}
+#theme-toggle {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+#theme-toggle:hover {
+  background: #e5e5e5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-group .btn-secondary {
+  background: #868484;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-group .btn-secondary:hover {
+  background: rgb(83, 80, 80);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
