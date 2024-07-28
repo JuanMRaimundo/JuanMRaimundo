@@ -94,17 +94,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
 .hero h1 {
-  /* font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 700; */
   color: #ffffff;
   font-weight: bold;
-  /*  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+
   text-shadow: -1px 0 #202020, 0 1px #202020, 1px 0 #202020, 0 -1px #202020;
 }
 
