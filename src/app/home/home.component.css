@@ -76,7 +76,7 @@
 
 .hero {
   height: 60vh;
-  background: url("/assets/images/two-computers.jpg") no-repeat center center;
+  background: url("/assets/images/banner-bg.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   text-align: center;
@@ -101,13 +101,11 @@
 .hero h1 {
   color: #ffffff;
   font-weight: bold;
-
-  text-shadow: -1px 0 #202020, 0 1px #202020, 1px 0 #202020, 0 -1px #202020;
 }
 
 .hero p {
   font-size: 1.25rem;
-  text-shadow: -1px 0 #202020, 0 1px #202020, 1px 0 #202020, 0 -1px #202020;
+
   margin-bottom: 2rem;
 }
 

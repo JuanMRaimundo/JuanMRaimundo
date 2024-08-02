@@ -1,5 +1,7 @@
 <section id="networks" class="networks-container">
-  <h2 class="section-title text-center mb-4">{{ "NETWORKS" | translate }}</h2>
+  <p class="section-title text-center mb-4" *ngIf="isDesktop">
+    {{ "NETWORKS" | translate }}
+  </p>
   <div class="text-center d-flex justify-content-md-evenly networks-icons">
     <a
       href="https://wa.me/+541163734198?text=Hola,%20quiero%20ponerme%20en%20contacto%20contigo"
