@@ -9,6 +9,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
+import { ScreenSizeService } from '../services/screenSize.service';
 
 @Component({
   selector: 'app-home',
@@ -36,10 +37,13 @@ import {
 export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private languageService: LanguageService,
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private screenSizeService: ScreenSizeService
   ) {}
   private themeSubscription!: Subscription;
+  private screenSizeSubscription!: Subscription;
   isDarkMode: boolean = false;
+  isMobile: boolean = false;
   isElementVisible: boolean = false;
 
   ngOnInit() {
@@ -47,19 +51,24 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.isDarkMode = isDark;
     });
     this.isDarkMode = this.themeService.loadTheme();
+    this.screenSizeSubscription = this.screenSizeService.isMobile$.subscribe(
+      (isMobile) => {
+        this.isMobile = isMobile;
+      }
+    );
   }
 
   ngOnDestroy() {
     if (this.themeSubscription) {
       this.themeSubscription.unsubscribe();
     }
+    if (this.screenSizeSubscription) {
+      this.screenSizeSubscription.unsubscribe();
+    }
   }
 
   changeLanguage(language: string) {
     this.languageService.switchLanguage(language);
-  }
-  get buttonMode(): string {
-    return this.isDarkMode ? 'btn btn-outline-light' : 'btn btn-outline-dark';
   }
 
   onIntersection(event: IntersectionObserverEntry[]) {

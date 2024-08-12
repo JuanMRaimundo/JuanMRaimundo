@@ -1,40 +1,216 @@
 <div class="hero">
   <h1>{{ "WELCOME" | translate }}</h1>
   <p>{{ "EXPLORE" | translate }}</p>
-  <a class="btn btn-secondary" href="#proyectos">{{ "START" | translate }}</a>
 </div>
 <div class="container mt-5">
   <!-- Proyectos Section -->
   <section id="proyectos">
     <h2 class="text-center mb-4">{{ "PROJECTS" | translate }}</h2>
     <!-- Proyecto Angular e-learning -->
-    <div
-      class="row mb-5 proyect-item"
-      [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
-      (intersectionObserver)="onIntersection($event)"
-    >
-      <div class="col-md-6">
-        <img
-          src="assets/images/AngularCursos2.png"
-          class="img-fluid project-image"
-          alt="Project 2"
-        />
+
+    <div *ngIf="isMobile; else desktopAngular" class="col-md-12">
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <h3>{{ "ANGULAR_PROJECT" | translate }}</h3>
+        <p>{{ "ANGULAR_PROJECT_DESC" | translate }}</p>
+        <a
+          href="https://github.com/JuanMRaimundo/NewTrainers-Angular"
+          target="_blank"
+        >
+          <img
+            src="assets/images/AngularCursos2.png"
+            class="img-fluid project-image"
+            alt="Project 2"
+          />
+        </a>
+      </div>
+    </div>
+    <ng-template #desktopAngular>
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <div class="col-md-6">
+          <a
+            href="https://github.com/JuanMRaimundo/NewTrainers-Angular"
+            target="_blank"
+          >
+            <img
+              src="assets/images/AngularCursos2.png"
+              class="img-fluid project-image"
+              alt="Project 2"
+            />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h3>{{ "ANGULAR_PROJECT" | translate }}</h3>
+          <p>{{ "ANGULAR_PROJECT_DESC" | translate }}</p>
+        </div>
+      </div>
+    </ng-template>
+    <!-- E-commerce realizado con JavaScript puro -->
+    <div *ngIf="isMobile; else desktopJS" class="col-md-12">
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <h3>{{ "JS_ECOMMERCE" | translate }}</h3>
+        <p>{{ "JS_ECOMMERCE_DESC" | translate }}</p>
+        <a
+          href="https://juanmraimundo.github.io/DulzurasBellaJS/"
+          target="_blank"
+        >
+          <img
+            src="assets/images/JS-1.jpg"
+            class="img-fluid project-image"
+            alt="Project 3"
+          />
+        </a>
+      </div>
+    </div>
+    <ng-template #desktopJS>
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <div class="col-md-6">
+          <h3>{{ "JS_ECOMMERCE" | translate }}</h3>
+          <p>{{ "JS_ECOMMERCE_DESC" | translate }}</p>
+        </div>
+        <div class="col-md-6">
+          <a
+            href="https://juanmraimundo.github.io/DulzurasBellaJS/"
+            target="_blank"
+          >
+            <img
+              src="assets/images/JS-1.jpg"
+              class="img-fluid project-image"
+              alt="Project 3"
+            />
+          </a>
+        </div>
+      </div>
+    </ng-template>
+
+    <!-- Proyecto React e-commerce -->
+    <div *ngIf="isMobile; else desktopReact" class="col-md-12">
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <h3>{{ "REACT_ECOMMERCE" | translate }}</h3>
+        <p>{{ "REACT_ECOMMERCE_DESC" | translate }}</p>
+        <a
+          href="https://github.com/JuanMRaimundo/SMSport-React"
+          target="_blank"
+        >
+          <img
+            src="assets/images/SMS-react-1.png"
+            class="img-fluid project-image"
+            alt="Project 4"
+          />
+        </a>
+      </div>
+    </div>
+    <ng-template #desktopReact>
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <div class="col-md-6">
+          <a
+            href="https://github.com/JuanMRaimundo/SMSport-React"
+            target="_blank"
+          >
+            <img
+              src="assets/images/SMS-react-1.png"
+              class="img-fluid project-image"
+              alt="Project 4"
+            />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h3>{{ "REACT_ECOMMERCE" | translate }}</h3>
+          <p>{{ "REACT_ECOMMERCE_DESC" | translate }}</p>
+        </div>
+      </div>
+    </ng-template>
+
+    <!-- Primer proyecto- GoForGym -->
+    <div *ngIf="isMobile; else desktopHTML" class="col-md-12">
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <h3>{{ "FIRST_PROJECT" | translate }}</h3>
+        <p>{{ "FIRST_PROJECT_DESC" | translate }}</p>
+        <a
+          href="https://juanmraimundo.github.io/ProyectoGoForGym.github.io/"
+          target="_blank"
+        >
+          <img
+            src="../../../assets/images/DW-goForGym.jpg"
+            class="img-fluid project-image"
+            alt="Project 4"
+          />
+        </a>
+      </div>
+    </div>
+    <ng-template #desktopHTML>
+      <div
+        class="row mb-5 proyect-item"
+        [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
+        (intersectionObserver)="onIntersection($event)"
+      >
+        <div class="col-md-6">
+          <h3>{{ "FIRST_PROJECT" | translate }}</h3>
+          <p>{{ "FIRST_PROJECT_DESC" | translate }}</p>
+        </div>
+        <div class="col-md-6">
+          <a
+            href="https://juanmraimundo.github.io/ProyectoGoForGym.github.io/"
+            target="_blank"
+          >
+            <img
+              src="../../../assets/images/DW-goForGym.jpg"
+              class="img-fluid project-image"
+              alt="Project 4"
+            />
+          </a>
+        </div>
+      </div>
+    </ng-template>
+
+    <!--   <div class="col-md-6">
+        <a
+          href="https://github.com/JuanMRaimundo/NewTrainers-Angular"
+          target="_blank"
+        >
+          <img
+            src="assets/images/AngularCursos2.png"
+            class="img-fluid project-image"
+            alt="Project 2"
+          />
+        </a>
       </div>
       <div class="col-md-6">
         <h3>{{ "ANGULAR_PROJECT" | translate }}</h3>
         <p>
           {{ "ANGULAR_PROJECT_DESC" | translate }}
         </p>
-        <a
-          href="https://github.com/JuanMRaimundo/NewTrainers-Angular"
-          target="_blank"
-          [ngClass]="buttonMode"
-          >{{ "WATCH" | translate }}</a
-        >
-      </div>
-    </div>
+      </div>-->
+
     <!-- Proyecto JS-E-commerce -->
-    <div
+    <!--   <div
       class="row mb-5 proyect-item"
       [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
       (intersectionObserver)="onIntersection($event)"
@@ -44,48 +220,46 @@
         <p>
           {{ "JS_ECOMMERCE_DESC" | translate }}
         </p>
+      </div>
+      <div class="col-md-6">
         <a
           href="https://juanmraimundo.github.io/DulzurasBellaJS/"
           target="_blank"
-          [ngClass]="buttonMode"
-          >{{ "WATCH" | translate }}</a
         >
-      </div>
-      <div class="col-md-6">
-        <img
-          src="assets/images/JS-1.jpg"
-          class="img-fluid project-image"
-          alt="Project 3"
-        />
+          <img
+            src="assets/images/JS-1.jpg"
+            class="img-fluid project-image"
+            alt="Project 3"
+          />
+        </a>
       </div>
     </div>
-    <!--  Proyecto React e-commerce -->
+     Proyecto React e-commerce
     <div
       class="row mb-5 proyect-item"
       [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
       (intersectionObserver)="onIntersection($event)"
     >
       <div class="col-md-6">
-        <img
-          src="assets/images/SMS-react-1.png"
-          class="img-fluid project-image"
-          alt="Project 4"
-        />
+        <a
+          href="https://github.com/JuanMRaimundo/SMSport-React"
+          target="_blank"
+        >
+          <img
+            src="assets/images/SMS-react-1.png"
+            class="img-fluid project-image"
+            alt="Project 4"
+          />
+        </a>
       </div>
       <div class="col-md-6">
         <h3>{{ "REACT_ECOMMERCE" | translate }}</h3>
         <p>
           {{ "REACT_ECOMMERCE_DESC" | translate }}
         </p>
-        <a
-          href="https://github.com/JuanMRaimundo/SMSport-React"
-          target="_blank"
-          [ngClass]="buttonMode"
-          >{{ "WATCH" | translate }}</a
-        >
       </div>
     </div>
-    <!-- Primer proyecto- GoForGym -->
+    <!-- Primer proyecto- GoForGym 
     <div
       class="row mb-5 proyect-item"
       [@fadeIn]="isElementVisible ? 'visible' : 'hidden'"
@@ -96,21 +270,20 @@
         <p>
           {{ "FIRST_PROJECT_DESC" | translate }}
         </p>
+      </div>
+      <div class="col-md-6">
         <a
           href="https://juanmraimundo.github.io/ProyectoGoForGym.github.io/"
           target="_blank"
-          [ngClass]="buttonMode"
-          >{{ "WATCH" | translate }}</a
         >
+          <img
+            src="../../../assets/images/DW-goForGym.jpg"
+            class="img-fluid project-image"
+            alt="Project 4"
+          />
+        </a>
       </div>
-      <div class="col-md-6">
-        <img
-          src="../../../assets/images/DW-goForGym.jpg"
-          class="img-fluid project-image"
-          alt="Project 4"
-        />
-      </div>
-    </div>
+    </div> -->
   </section>
 
   <section id="otros">
