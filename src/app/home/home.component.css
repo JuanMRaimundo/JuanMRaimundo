@@ -119,3 +119,24 @@
   background-color: #181818;
   color: #ddd;
 }
+.skills-carousel {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.skill-icon {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}

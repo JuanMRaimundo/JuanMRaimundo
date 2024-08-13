@@ -45,6 +45,17 @@ export class HomeComponent implements OnInit, OnDestroy {
   isDarkMode: boolean = false;
   isMobile: boolean = false;
   isElementVisible: boolean = false;
+  skills = [
+    { name: 'HTML', icon: 'assets/icons/html5.svg' },
+    { name: 'CSS', icon: 'assets/icons/css3.svg' },
+    { name: 'JavaScript', icon: 'assets/icons/javascript.svg' },
+    { name: 'Node.js', icon: 'assets/icons/nodejs.svg' },
+    { name: 'MongoDB', icon: 'assets/icons/mongodb.svg' },
+    { name: 'Bootstrap', icon: 'assets/icons/bootstrap.svg' },
+    { name: 'GitHub', icon: 'assets/icons/github.svg' },
+    { name: 'Angular', icon: 'assets/icons/angular.svg' },
+    { name: 'React', icon: 'assets/icons/react.svg' },
+  ];
 
   ngOnInit() {
     this.themeSubscription = this.themeService.darkMode$.subscribe((isDark) => {
