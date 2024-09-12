@@ -1,0 +1,10 @@
+<div [ngClass]="{ 'dark-theme': isDarkMode }" class="skills-grid">
+  <div class="skill-item" *ngFor="let skill of skills">
+    <img
+      [src]="skill.icon"
+      alt="{{ skill.name | translate }}"
+      class="skill-icon"
+    />
+    <p>{{ skill.name | translate }}</p>
+  </div>
+</div>

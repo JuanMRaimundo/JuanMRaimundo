@@ -1,0 +1,50 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  animation: slide 10s linear infinite;
+  animation-play-state: running;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}

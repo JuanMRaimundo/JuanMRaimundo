@@ -10,7 +10,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NetworksComponent } from './components/networks/networks.component';
 import { ThemeModeComponent } from './components/theme-mode/theme-mode.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IntersectionObserverDirective } from './directives/intersection-observer.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export function HttpLoaderFactory(http: HttpClient) {

@@ -1,0 +1,47 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.skill-item {
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--background-color, #fff);
+  padding: 1rem;
+  /* transition: transform 0.3s, box-shadow 0.3s; */
+  transition: background-color 0.3s ease;
+}
+.skill-item img {
+  max-width: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dark-theme .skill-item {
+  background-color: #2c2c2c; /* Un fondo oscuro pero no negro total */
+  color: #fff; /* Texto claro */
+}
+
+.dark-theme .skill-item img {
+  filter: brightness(
+    150%
+  ); /* Aumentar brillo para que las imágenes se vean mejor en fondo oscuro */
+}
