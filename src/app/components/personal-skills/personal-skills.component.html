@@ -1,4 +1,8 @@
-<div [ngClass]="{ 'dark-theme': isDarkMode }" class="skills-grid">
+<div
+  [ngClass]="{ 'dark-theme': isDarkMode }"
+  class="skills-grid"
+  id="personal-skills"
+>
   <div class="skill-item" *ngFor="let skill of skills">
     <img
       [src]="skill.icon"
