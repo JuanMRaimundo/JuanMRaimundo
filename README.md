@@ -1,4 +1,4 @@
-Hola, soy Juan Marco Raimundo 👋
+Hola, soy Juan Marco Raimundo 
 
 🚀 Backend & Full Stack Developer
 
@@ -44,6 +44,6 @@ Igroker (Frontend & Logic): Colaboré en la creación de un simulador de inversi
 
 Estoy abierto a nuevas oportunidades donde pueda aportar mi capacidad de análisis y desarrollo Backend.
 
-Portfolio: [juanmr-portfolio.vercel.app](https://portfoliojmraimundo-v2-rouge-six.vercel.app/#)
+Portfolio: juanmr-portfolio.vercel.app
 
 Email: juanmr.093@gmail.com
