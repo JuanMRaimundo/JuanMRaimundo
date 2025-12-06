@@ -1,47 +1,49 @@
-# RaimundoPortfolio 🌟
+Hola, soy Juan Marco Raimundo 👋
 
-![Angular](https://img.shields.io/badge/Angular-16.2.14-red)
-![License](https://img.shields.io/badge/license-MIT-green)
+🚀 Backend & Full Stack Developer
 
-Este proyecto fue generado con Angular CLI versión 16.2.14.
+Soy estudiante de la Tecnicatura Superior en Programación en la UTN y desarrollador apasionado por la lógica de negocio, la arquitectura de software y la optimización de procesos.
 
-This project was generated with Angular CLI version 16.2.14.
+Mi enfoque actual está en el Backend, diseñando APIs robustas y bases de datos escalables, aunque tengo una sólida base en Frontend (Angular/React) que me permite tener una visión completa del ciclo de vida del software.
 
----
+🛠️ Tech Stack
 
-## Sections 📂
+Backend & Bases de Datos
 
-- **Home:** Brief introduction and overview.
-- **Projects:** Detailed view of your projects with images, descriptions, and links.
-- **Skills:** My profesionals and personals skills.
+<p>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Node.js-43853D%3Fstyle%3Dfor-the-badge%26logo%3Dnode.js%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Express.js-404D59%3Fstyle%3Dfor-the-badge" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/TypeScript-007ACC%3Fstyle%3Dfor-the-badge%26logo%3Dtypescript%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/MongoDB-4EA94B%3Fstyle%3Dfor-the-badge%26logo%3Dmongodb%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/MySQL-005C84%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" />
+</p>
 
----
+Frontend & Herramientas
 
-## Contact 📧
+<p>
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/React-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/GIT-E44C30%3Fstyle%3Dfor-the-badge%26logo%3Dgit%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Postman-FF6C37%3Fstyle%3Dfor-the-badge%26logo%3Dpostman%26logoColor%3Dwhite" />
+</p>
 
-- **Email:** juanmr.093@gmail.com
-- **LinkedIn:** [Juan Marco Raimundo](https://www.linkedin.com/in/juan-marco-raimundo-984924141/?originalSubdomain=ar)
-- **GitHub:** [JuanMRaimundo](https://github.com/JuanMRaimundo)
-- **Portfolio:** https://jmraimundo-portfolio.netlify.app/
+💼 Experiencia Destacada
 
----
+Transportes Guzzo (Full Stack): Desarrollé una plataforma integral para digitalizar la logística de camiones, eliminando el uso de Excel y reduciendo tiempos administrativos mediante una API customizada.
 
-## Features ✨
+Igroker (Frontend & Logic): Colaboré en la creación de un simulador de inversiones, participando activamente en la definición de endpoints para asegurar una comunicación cliente-servidor eficiente.
 
-- **Multi-language Support:** English and Spanish versions.
-- **Dark/Light Mode Switch:** Easily switch between dark and light themes.
-- **Responsive Design:** Looks great on both desktop and mobile devices.
-- **Project Gallery:** Showcase your projects with descriptions and links to repositories.
+📈 GitHub Stats
 
----
+<p align="center">
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DJuanMRaimundo%26show_icons%3Dtrue%26theme%3Ddracula%26hide_border%3Dtrue%26bg_color%3D0D1117" alt="Juan's GitHub Stats" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DJuanMRaimundo%26layout%3Dcompact%26theme%3Ddracula%26hide_border%3Dtrue%26bg_color%3D0D1117" alt="Top Langs" />
+</p>
 
-### Acknowledgements 🙌
+📫 Contáctame
 
-- **Angular Team** for their amazing framework.
-- **Bootstrap** for the CSS framework.
+Estoy abierto a nuevas oportunidades donde pueda aportar mi capacidad de análisis y desarrollo Backend.
 
----
+Portfolio: [juanmr-portfolio.vercel.app](https://portfoliojmraimundo-v2-rouge-six.vercel.app/#)
 
-¡Gracias por visitar mi portfolio!
-
-Thank you for visiting my portfolio!
+Email: juanmr.093@gmail.com
