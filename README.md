@@ -1,10 +1,10 @@
 Hola, soy Juan Marco Raimundo 
 
-🚀 Backend & Full Stack Developer
+🚀 Full Stack Developer
 
 Soy estudiante de la Tecnicatura Superior en Programación en la UTN y desarrollador apasionado por la lógica de negocio, la arquitectura de software y la optimización de procesos.
 
-Mi enfoque actual está en el Backend, diseñando APIs robustas y bases de datos escalables, aunque tengo una sólida base en Frontend (Angular) que me permite tener una visión completa del ciclo de vida del software.
+Mi enfoque actual está en el Backend, diseñando APIs robustas y bases de datos escalables, aunque tengo una sólida base en Frontend que me permite tener una visión completa del ciclo de vida del software.
 
 🛠️ Tech Stack
 
